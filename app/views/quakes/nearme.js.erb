@@ -1,0 +1,8 @@
+<% if @update_search %>
+  $('.search_bar').replaceWith('<%= j render(:partial => 'search_bar') %>');
+<% end %>
+
+//alert('replacing quakes');
+$('#quakes').replaceWith('<%= j render('quake_data') %>');
+// alert('initalizing map');
+init_map(<%= @latitude %>, <%= @longitude %>, true)

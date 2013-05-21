@@ -1,0 +1,17 @@
+<%= form_for(@quake) do |f| %>
+  <% if @quake.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@quake.errors.count, "error") %> prohibited this quake from being saved:</h2>
+
+      <ul>
+      <% @quake.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

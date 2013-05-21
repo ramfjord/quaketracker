@@ -1,0 +1,47 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+AddUniqTimestampsIndex	db/migrate/20130517005619_add_uniq_timestamps_index.rb	/^class AddUniqTimestampsIndex < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:Quaketracker
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CreateDelayedJobs	db/migrate/20130517203159_create_delayed_jobs.rb	/^class CreateDelayedJobs < ActiveRecord::Migration$/;"	c
+CreateQuakes	db/migrate/20130516085848_create_quakes.rb	/^class CreateQuakes < ActiveRecord::Migration$/;"	c
+GeoHelper	app/helpers/geo_helper.rb	/^module GeoHelper$/;"	m
+GeocoderCompatibility	db/migrate/20130517221322_geocoder_compatibility.rb	/^class GeocoderCompatibility < ActiveRecord::Migration$/;"	c
+Quake	app/models/quake.rb	/^class Quake < ActiveRecord::Base$/;"	c
+QuakesController	app/controllers/quakes_controller.rb	/^class QuakesController < ApplicationController$/;"	c
+QuakesHelper	app/helpers/quakes_helper.rb	/^module QuakesHelper$/;"	m
+Quaketracker	config/application.rb	/^module Quaketracker$/;"	m
+change	db/migrate/20130516085848_create_quakes.rb	/^  def change$/;"	f	class:CreateQuakes
+change	db/migrate/20130517005619_add_uniq_timestamps_index.rb	/^  def change$/;"	f	class:AddUniqTimestampsIndex
+change	db/migrate/20130517221322_geocoder_compatibility.rb	/^  def change$/;"	f	class:GeocoderCompatibility
+correct_attrs	app/models/quake.rb	/^  def self.correct_attrs(attrs) # because we import from 2 sources which aren't exactly the same$/;"	F	class:Quake
+distance	app/helpers/geo_helper.rb	/^  def self.distance(lat1, lon1, lat2, lon2)$/;"	F	class:GeoHelper
+down	db/migrate/20130517203159_create_delayed_jobs.rb	/^  def self.down$/;"	F	class:CreateDelayedJobs
+from_csv_line	app/models/quake.rb	/^  def self.from_csv_line(headers, line)$/;"	F	class:Quake
+get_all_from_csv	app/models/quake.rb	/^  def self.get_all_from_csv(csv)$/;"	F	class:Quake
+index	app/controllers/quakes_controller.rb	/^  def index$/;"	f	class:QuakesController
+init_map	app/assets/javascripts/quakes.js	/^function init_map(lat, lon) {$/;"	f
+init_map.mapOptions.center	app/assets/javascripts/quakes.js	/^  var mapOptions = {$/;"	p
+latitude	app/helpers/quakes_helper.rb	/^  def latitude$/;"	f	class:QuakesHelper
+load_from_csv	app/models/quake.rb	/^  def self.load_from_csv(csv, only_recent)$/;"	F	class:Quake
+longitude	app/helpers/quakes_helper.rb	/^  def longitude$/;"	f	class:QuakesHelper
+map_at	app/helpers/quakes_helper.rb	/^  def map_at(lat, lon)$/;"	f	class:QuakesHelper
+near5	app/models/quake.rb	/^  def self.near5(lat, lon, quakes = self)$/;"	F	class:Quake
+nearme	app/controllers/quakes_controller.rb	/^  def nearme$/;"	f	class:QuakesController
+on	app/models/quake.rb	/^  def self.on(unix_time, quakes = self)$/;"	F	class:Quake
+over	app/models/quake.rb	/^  def self.over(magnitude, quakes = self)$/;"	F	class:Quake
+radians	app/helpers/geo_helper.rb	/^  def self.radians(n)$/;"	F	class:GeoHelper
+range	app/assets/javascripts/quakes.js	/^function range(quake) {$/;"	f
+show	app/controllers/quakes_controller.rb	/^  def show$/;"	f	class:QuakesController
+since	app/models/quake.rb	/^  def self.since(unix_time, quakes = self)$/;"	F	class:Quake
+small_json	app/models/quake.rb	/^  def small_json$/;"	f	class:Quake
+up	db/migrate/20130517203159_create_delayed_jobs.rb	/^  def self.up$/;"	F	class:CreateDelayedJobs
+update_from_csv	app/models/quake.rb	/^  def self.update_from_csv(csv)$/;"	F	class:Quake
+within	app/models/quake.rb	/^  def self.within(lat, lon, n) # miles$/;"	F	class:Quake
+within?	app/models/quake.rb	/^  def within?(lat, lon, dist)$/;"	f	class:Quake
+within_box	app/models/quake.rb	/^  def self.within_box(lat1, lon1, lat2, lon2)$/;"	F	class:Quake

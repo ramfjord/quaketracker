@@ -1,0 +1,14 @@
+<div class=search_bar>
+  <div class=previous_search>
+  Showing earthquakes near 
+  <% if @address %> 
+    <%= @address %>
+  <% else %>
+    <%= "#{latitude}, #{longitude}".html_safe %>
+  <% end %>
+  </div>
+  <%= form_tag nearme_path, method: :get, remote: true do %>
+    <%= label_tag 'Search' %>
+    <%= text_field_tag 'address' %>
+  <% end %>
+</div>

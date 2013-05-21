@@ -1,0 +1,13 @@
+// Place all the styles related to the quakes controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search_bar {
+  margin: 10px auto;
+  width:500px;
+
+  input[type="text"] {
+    width:400px;
+    padding: 3px;
+  }
+}

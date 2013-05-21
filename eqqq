@@ -1,0 +1,117 @@
+= TTiimmee  <<  OObbjjeecctt
+
+------------------------------------------------------------------------------
+= IInncclluuddeess::
+Comparable (from ruby site)
+
+(from ruby site)
+------------------------------------------------------------------------------
+Time is an abstraction of dates and times. Time is stored internally as the
+number of seconds with fraction since the _E_p_o_c_h, January 1, 1970
+00:00 UTC. Also see the library modules Date. The Time class treats GMT
+(Greenwich Mean Time) and UTC (Coordinated Universal Time)_[_Y_e_s_,_
+_U_T_C_ _r_e_a_l_l_y_ _d_o_e_s_ _s_t_a_n_d_ _f_o_r_
+_C_o_o_r_d_i_n_a_t_e_d_ _U_n_i_v_e_r_s_a_l_
+_T_i_m_e_._ _T_h_e_r_e_ _w_a_s_ _a_
+_c_o_m_m_i_t_t_e_e_ _i_n_v_o_l_v_e_d_._] as equivalent. 
+GMT is the older way of referring to these baseline times but persists in the
+names of calls on POSIX systems.
+
+All times may have fraction. Be aware of this fact when comparing times with
+each other---times that are apparently equal when displayed may be different
+when compared.
+
+
+
+Implements the extensions to the Time class that are described in the
+documentation for the time.rb library.
+
+------------------------------------------------------------------------------
+= CCoonnssttaannttss::
+
+CommonYearMonthDays:
+  [not documented]
+
+LeapYearMonthDays:
+  [not documented]
+
+MonthValue:
+  [not documented]
+
+RFC2822_DAY_NAME:
+  [not documented]
+
+RFC2822_MONTH_NAME:
+  [not documented]
+
+ZoneOffset:
+  [not documented]
+
+
+= CCllaassss  mmeetthhooddss::
+
+  _load, apply_offset, at, gm, httpdate, iso8601, json_create, local,
+  make_time, mktime, month_days, new, now, parse, rfc2822, rfc822, strptime,
+  utc, w3cdtf, xmlschema, zone_offset, zone_utc?
+
+= IInnssttaannccee  mmeetthhooddss::
+
+  +, -, <=>, _dump, asctime, ctime, day, dst?, eql?, friday?, getgm, getlocal,
+  getutc, gmt?, gmt_offset, gmtime, gmtoff, hash, hour, httpdate, inspect,
+  isdst, iso8601, localtime, marshal_dump, marshal_load, mday, min, mon,
+  monday?, month, nsec, rfc2822, rfc822, round, saturday?, sec, strftime,
+  subsec, succ, sunday?, thursday?, to_a, to_date, to_datetime, to_f, to_i,
+  to_json, to_r, to_s, to_time, tuesday?, tv_nsec, tv_sec, tv_usec, usec, utc,
+  utc?, utc_offset, w3cdtf, wday, wednesday?, xmlschema, yday, year, zone
+
+(from gem activesupport-3.1.0)
+------------------------------------------------------------------------------
+= CCoonnssttaannttss::
+
+COMMON_YEAR_DAYS_IN_MONTH:
+  [not documented]
+
+DATE_FORMATS:
+  [not documented]
+
+DAYS_INTO_WEEK:
+  [not documented]
+
+
+= CCllaassss  mmeetthhooddss::
+
+  ===, _load, _load_without_utc_flag, _load_without_zone, current,
+  days_in_month, find_zone, find_zone!, local_time,
+  time_with_datetime_fallback, use_zone, utc_time, zone, zone=, zone_default
+
+= IInnssttaannccee  mmeetthhooddss::
+
+  -, <=>, _dump, _dump_without_utc_flag, _dump_without_zone, acts_like_time?,
+  advance, ago, at_beginning_of_day, at_beginning_of_month,
+  at_beginning_of_quarter, at_beginning_of_week, at_beginning_of_year,
+  at_end_of_month, at_end_of_quarter, at_end_of_week, at_end_of_year,
+  at_midnight, beginning_of_day, beginning_of_month, beginning_of_quarter,
+  beginning_of_week, beginning_of_year, change, compare_with_coercion,
+  compare_without_coercion, end_of_day, end_of_month, end_of_quarter,
+  end_of_week, end_of_year, formatted_offset, future?, in, in_time_zone,
+  midnight, minus_with_coercion, minus_without_coercion,
+  minus_without_duration, monday, months_ago, months_since, next_month,
+  next_week, next_year, past?, prev_month, prev_week, prev_year,
+  seconds_since_midnight, since, to_default_s, to_formatted_s, to_s, to_time,
+  today?, tomorrow, weeks_ago, years_ago, years_since, yesterday
+
+= AAttttrriibbuutteess::
+
+  attr_accessor zone_default
+
+(from gem rake-0.8.7)
+------------------------------------------------------------------------------
+                                                                             
+
+Extensions to time to allow comparisons with an early time class.
+
+------------------------------------------------------------------------------
+= IInnssttaannccee  mmeetthhooddss::
+
+  <=>, rake_original_time_compare
+

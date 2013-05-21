@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<% content_for :head do %>
+  <style type="text/css">
+    html { height: 100% }
+    body { height: 100%; margin: 0; padding: 0 }
+    #map-canvas { height: 400px; width:100%; }
+  </style>
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=<%= google_api_key %>&sensor=false">
+  </script>
+<% end %>
+
+<%= render 'search_bar' %>
+
+<div id="map-canvas"></div>
+
+<%= render 'quake_data' %>
+
+<script type="text/javascript">
+  $(function() { init_map(<%=@latitude%>, <%=@longitude%>) })
+  //$(function() { initialize() })
+</script>

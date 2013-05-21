@@ -1,0 +1,3 @@
+Welcome the the code for Quaketracker.  It's a fairly simple rails app which only has one resource - earthquakes, and not much in terms of restful routes for that resource.
+
+Before you try this code out for yourself, be sure to add a google api key in google_helper.rb!
